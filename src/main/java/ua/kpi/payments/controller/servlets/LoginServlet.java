@@ -17,6 +17,7 @@ public class LoginServlet extends HttpServlet {
         String login = request.getParameter("username");
         String password = request.getParameter("password");
         if (LoginDAO.validate(login, password)) {
+            request.setAttribute("name", login);
             request.getRequestDispatcher("welcome.jsp").forward(request, response);
         } else {
             request.getRequestDispatcher("error.jsp").include(request, response);
