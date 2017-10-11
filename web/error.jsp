@@ -11,6 +11,7 @@
     <title>Error</title>
 </head>
 <body>
-    <h3><%=System.err.println("Sorry user or password error, try again")%></h3>
+    <h3><strong style="color: red">ERROR LOGIN</strong></h3>
+    <a href="login">try again</a>
 </body>
 </html>

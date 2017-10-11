@@ -16,7 +16,7 @@ public class LoginDAO {
             preparedStatement.setString(1, login);
             preparedStatement.setString(2, password);
             ResultSet resultSet = preparedStatement.executeQuery();
-            resultSet.next();
+            status = resultSet.next();
         } catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
         }
