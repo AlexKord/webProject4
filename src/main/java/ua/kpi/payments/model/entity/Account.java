@@ -3,7 +3,7 @@ package ua.kpi.payments.model.entity;
 import java.io.Serializable;
 
 public class Account implements Serializable {
-    private int id;
+    private int account_id;
     private double balance;
     private boolean isBlocked;
     private int cardNumber;
@@ -12,19 +12,19 @@ public class Account implements Serializable {
     public Account() {
     }
 
-    public Account(int id, double balance, boolean isBlocked, int cardNumber) {
-        this.id = id;
+    public Account(int account_id, double balance, boolean isBlocked, int cardNumber) {
+        this.account_id = account_id;
         this.balance = balance;
         this.isBlocked = isBlocked;
         this.cardNumber = cardNumber;
     }
 
     public int getId() {
-        return id;
+        return account_id;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setId(int account_id) {
+        this.account_id = account_id;
     }
 
     public double getBalance() {
