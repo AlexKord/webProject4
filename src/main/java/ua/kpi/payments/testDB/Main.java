@@ -1,12 +1,12 @@
 package ua.kpi.payments.testDB;
 
 
-import ua.kpi.payments.model.dao.MySqlDAOFactory;
+import ua.kpi.payments.model.dao.MySQLDAOFactory;
 
 import java.sql.SQLException;
 
 public class Main {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
-        new MySqlDAOFactory().getConnection();
+        new MySQLDAOFactory().getConnection();
     }
 }
