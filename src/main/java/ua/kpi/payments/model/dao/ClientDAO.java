@@ -1,4 +1,14 @@
 package ua.kpi.payments.model.dao;
 
-public class ClientDAO {
+import ua.kpi.payments.model.entity.Client;
+
+import java.sql.SQLException;
+import java.util.List;
+
+public interface ClientDAO {
+    Client create();
+    Client read(int key);
+    void update(Client client);
+    void delete(Client client);
+    List<Client> getAll()throws SQLException;
 }

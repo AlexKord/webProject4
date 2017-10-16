@@ -30,26 +30,26 @@
             </tr>
             <tr>
                 <th>First Name</th>
-                <td><input type="text" name="first_name"/></td>
+                <td><input type="text" name="first_name" required/></td>
             </tr>
             <tr>
                 <th>Last Name</th>
-                <td><input type="text" name="last_name"/></td>
+                <td><input type="text" name="last_name" required/></td>
             </tr>
             <tr>
                 <th>Email</th>
-                <td><input type="email" name="email"></td>
+                <td><input type="email" name="email" required></td>
             </tr>
             <tr>
                 <th>Login</th>
-                <td><input type="text" name="login"></td>
+                <td><input type="text" name="login" required></td>
             </tr>
             <tr>
                 <th>Password</th>
-                <td><input type="password" name="password"></td>
+                <td><input type="password" name="password" required></td>
             </tr>
             <tr>
-                <td align="right"><a href="/welcome"><input type="submit" value="Register"></a></td>
+                <td align="right"><a href="welcome"><input type="submit" value="Register"></a></td>
             </tr>
         </table>
     </form>

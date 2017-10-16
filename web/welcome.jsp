@@ -1,4 +1,5 @@
-<%@ page import="ua.kpi.payments.model.entity.Client" %><%--
+<%@ page import="ua.kpi.payments.model.entity.Client" %>
+<%--
   Created by IntelliJ IDEA.
   User: Lesya
   Date: 02.10.2017
@@ -12,16 +13,15 @@
         background-image: url("/images/sub-page-banner-payment.jpg");
         background-size: cover;
     }
+
 </style>
 <head>
     <title>Welcome</title>
 </head>
 <body>
-    <div>
-        <h3 align="center">Registration complete</h3>
-        <h1>${name}</h1>
+    <div align="center">
+        <h3>Welcome to system</h3>
+        <h1>${login}</h1>
     </div>
-
-
 </body>
 </html>
