@@ -7,9 +7,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 public class MySQLPaymentDAO implements PaymentDAO {
-    private final Connection connection = null;
+    private Connection connection;
 
-    public MySQLPaymentDAO() {
+    public MySQLPaymentDAO(Connection connection) {
+        this.connection = connection;
     }
 
     @Override
