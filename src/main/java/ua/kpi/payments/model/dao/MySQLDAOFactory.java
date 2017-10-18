@@ -34,7 +34,7 @@ public class MySQLDAOFactory implements DAOFactory {
 
     @Override
     public ClientDAO getClientDAO(Connection connection) {
-        return new MySQLClientDAO();
+        return new MySQLClientDAO(connection);
     }
 
     @Override

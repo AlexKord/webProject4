@@ -14,6 +14,16 @@
         background-size: cover;
     }
 
+    p {
+        padding: 10px;
+        text-align: center;
+        border-style: inset;
+        border-width: 5px;
+        border-color: blue;
+    }
+    div {
+        width: 15%;
+    }
 </style>
 <head>
     <title>Welcome</title>

@@ -9,6 +9,9 @@ import java.util.List;
 public class MySQLPaymentDAO implements PaymentDAO {
     private Connection connection;
 
+    public MySQLPaymentDAO() {
+    }
+
     public MySQLPaymentDAO(Connection connection) {
         this.connection = connection;
     }

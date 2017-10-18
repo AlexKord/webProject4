@@ -11,6 +11,9 @@ import java.util.List;
 public class MySQLAccountDAO implements AccountDAO {
     private Connection connection;
 
+    public MySQLAccountDAO() {
+    }
+
     public MySQLAccountDAO(Connection connection) {
         this.connection = connection;
     }
@@ -26,7 +29,12 @@ public class MySQLAccountDAO implements AccountDAO {
         preparedStatement.setInt(1, key);
         ResultSet resultSet = preparedStatement.executeQuery();
         resultSet.next();
-        return null;
+        Account account = new Account();
+        account.setAccount_id(resultSet.getInt("account_id"));
+        account.setBalance(resultSet.getDouble("balance"));
+        account.setBlocked(resultSet.getBoolean("status"));
+        account.setCardNumber(resultSet.getInt("card_number"));
+        return account;
     }
 
     @Override

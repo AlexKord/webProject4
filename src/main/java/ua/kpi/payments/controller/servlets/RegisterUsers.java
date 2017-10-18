@@ -33,6 +33,7 @@ public class RegisterUsers extends HttpServlet {
             preparedStatement.setString(5, login);
             preparedStatement.setString(6, password);
             preparedStatement.executeUpdate();
+            request.setAttribute("login", firstName);
             request.getRequestDispatcher("welcome.jsp").forward(request, response);
         } catch (ClassNotFoundException | SQLException e) {
             System.err.println(e);
